@@ -4,7 +4,8 @@
   "description": "Wrap query substring(s) in HTML tags",
   "main": "distribution/index.js",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/alexZielonko/tag-wrapper.git"
   },
   "keywords": [
     "wrap",
@@ -16,6 +17,10 @@
   ],
   "author": "Alex Zielonko",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexZielonko/tag-wrapper/issues"
+  },
+  "homepage": "https://github.com/alexZielonko/tag-wrapper#readme",
   "scripts": {
     "build": "babel src --out-dir distribution",
     "coverage": "jest --coverage",
@@ -40,5 +45,9 @@
     "transform": {
       ".*": "<rootDir>/node_modules/babel-jest"
     }
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
