@@ -1,0 +1,44 @@
+{
+  "name": "tag-wrapper",
+  "version": "1.0.0",
+  "description": "Wrap query substring(s) in HTML tags",
+  "main": "distribution/index.js",
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "wrap",
+    "query",
+    "string",
+    "substring",
+    "html",
+    "tags"
+  ],
+  "author": "Alex Zielonko",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir distribution",
+    "coverage": "jest --coverage",
+    "precommit": "npm run precise-commits",
+    "prepublish": "npm run build",
+    "prepush": "npm run test",
+    "test": "jest",
+    "testWatch": "jest --watchAll"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "husky": "^0.14.3",
+    "jest-cli": "^22.4.3",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.12.1"
+  },
+  "jest": {
+    "testURL": "http://localhost/",
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    }
+  }
+}

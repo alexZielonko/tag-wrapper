@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tagWrapper Hanldes multi word query matching 1`] = `"The <em>quick brown fox</em> jumps over the lazy dog"`;
+
+exports[`tagWrapper Returns the original string if no tags passed 1`] = `"The quick brown fox jumps over the lazy dog"`;
+
+exports[`tagWrapper Returns the original string if the query is not found 1`] = `"The quick brown fox jumps over the lazy dog"`;
+
+exports[`tagWrapper Returns the query wrapped in tags regardless of str case 1`] = `"THE QUICK BROWN <em>FOX</em> JUMPS OVER THE LAZY DOG"`;
+
+exports[`tagWrapper Returns the query wrapped in the tags if found 1`] = `"The quick brown <em>fox</em> jumps over the lazy dog"`;
+
+exports[`tagWrapper Returns the query wrapped in the tags regardless of query case 1`] = `"The quick brown <em>fox</em> jumps over the lazy dog"`;
+
+exports[`tagWrapper Wraps all query matches within a str 1`] = `"<em>quick brown</em> fox <em>quick brown</em> fox"`;
+
+exports[`tagWrapper Wraps all query matches within a str while preserving str match case 1`] = `"<em>quick brown</em> fox <em>QUICK BROWN</em> FOX <em>quick BROWN</em> fox"`;
+
+exports[`tagWrapper Wraps text containing "!" 1`] = `"bar <em>!foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "#" 1`] = `"bar <em>#foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "$" 1`] = `"bar <em>$foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "%" 1`] = `"bar <em>%foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "&" 1`] = `"bar <em>&foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "'" 1`] = `"bar <em>'foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "(" 1`] = `"bar <em>(foo</em>) bar"`;
+
+exports[`tagWrapper Wraps text containing ")" 1`] = `"bar (<em>foo)</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "*" 1`] = `"bar <em>*foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "+" 1`] = `"bar <em>+foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "," 1`] = `"bar <em>,foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "." 1`] = `"bar <em>.foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "/" 1`] = `"bar <em>/foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "=" 1`] = `"bar <em>=foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "?" 1`] = `"bar <em>?foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "@" 1`] = `"bar <em>@foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "[" 1`] = `"bar <em>[foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "]" 1`] = `"bar <em>]foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "^" 1`] = `"bar <em>^foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "_" 1`] = `"bar <em>_foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "\`" 1`] = `"bar <em>\`foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "{" 1`] = `"bar <em>{foo</em>} bar"`;
+
+exports[`tagWrapper Wraps text containing "|" 1`] = `"bar <em>|foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "}" 1`] = `"bar {<em>foo}</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "~" 1`] = `"bar <em>~foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing "-" 1`] = `"bar <em>-foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing '"' 1`] = `"bar <em>\\"foo</em> bar"`;
+
+exports[`tagWrapper Wraps text containing escapable characters 1`] = `"five% <em>nine(</em>"`;
+
+exports[`tagWrapper Wraps the query within an existing word in the str 1`] = `"The quick brown fox j<em>um</em>ps over the lazy dog"`;
