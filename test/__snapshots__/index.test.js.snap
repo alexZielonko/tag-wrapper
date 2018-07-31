@@ -2,6 +2,10 @@
 
 exports[`tagWrapper Hanldes multi word query matching 1`] = `"The <em>quick brown fox</em> jumps over the lazy dog"`;
 
+exports[`tagWrapper Returns original str argument if a falsy str arg is passed 1`] = `undefined`;
+
+exports[`tagWrapper Returns the original str argument if a falsy query arg is passed 1`] = `"The quick brown fox jumps over the lazy dog"`;
+
 exports[`tagWrapper Returns the original string if no tags passed 1`] = `"The quick brown fox jumps over the lazy dog"`;
 
 exports[`tagWrapper Returns the original string if the query is not found 1`] = `"The quick brown fox jumps over the lazy dog"`;

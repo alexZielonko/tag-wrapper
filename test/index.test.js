@@ -12,6 +12,22 @@ describe('tagWrapper', () => {
     expect(actual).toMatchSnapshot()
   })
 
+  it('Returns original str argument if a falsy str arg is passed', () => {
+    const actual = tagWrapper(tags, 'fox', undefined)
+    const expected = undefined
+
+    expect(actual).toBe(expected)
+    expect(actual).toMatchSnapshot()
+  })
+
+  it('Returns the original str argument if a falsy query arg is passed', () => {
+    const actual = tagWrapper(tags, undefined, str)
+    const expected = str
+
+    expect(actual).toBe(expected)
+    expect(actual).toMatchSnapshot()
+  })
+
   it('Returns the original string if the query is not found', () => {
     const actual = tagWrapper(tags, 'canned beef', str)
     const expected = str

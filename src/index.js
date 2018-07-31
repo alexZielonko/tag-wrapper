@@ -60,7 +60,9 @@ export default function tagWrapper(tags, query, str) {
     return wrappedText + str
   }
 
-  if (!hasMatchingQuery(query, str) || !openingTag || !closingTag) {
+  const hasParams = !!str && !!query && !!openingTag && !!closingTag
+
+  if (!hasParams || !hasMatchingQuery(query, str)) {
     return str
   }
 
