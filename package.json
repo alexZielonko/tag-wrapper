@@ -24,7 +24,7 @@
   "scripts": {
     "build": "babel src --out-dir distribution",
     "coverage": "jest --coverage",
-    "precommit": "npm run precise-commits",
+    "precommit": "npx precise-commits --verbose",
     "prepublish": "npm run build",
     "prepush": "npm run test",
     "test": "jest",
