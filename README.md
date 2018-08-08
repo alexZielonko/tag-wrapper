@@ -24,4 +24,16 @@ const formattedStr = tagWrapper(tags, query, str)
 formattedStr // 'The quick brown <em>fox</em> jumps over the lazy <em>FOX</em>.'
 ```
 
-`tagWrapper` returns the `str` argument if the `query` is not in the `str` _or_ the `query`, `str`, or either `tags` index is falsy.
+## API
+
+### `tagWrapper(tags, query, str)`
+
+Wrap `str`'s instances of `query` substring in provided `tags`.
+
+**Returns** the `str` argument if the `query` is not in the `str` _or_ the `query`, `str`, or either `tags` index is falsy.
+
+param | type   | description                                                                                                                                                | example
+------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------
+tags  | array  | Array containing string "tags" to wrap instances of query text within `str`. Preceding tag should be the first index, succeeding tag should be the second. | `['<em>', '</em>']`
+query | string | Subtext in `str` to wrap within `tags`                                                                                                                     | `'foo'`
+str   | string | Text containing instances of `query` to wrap in `tags`                                                                                                     | `'foo bar'`
