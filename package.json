@@ -1,6 +1,6 @@
 {
   "name": "tag-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wrap query substring(s) in HTML tags",
   "main": "distribution/index.js",
   "repository": {
