@@ -30,7 +30,7 @@ function getAfterQueryText(query, str) {
 // Tags - ['openingTag', 'closingTag']
 // Query - text within str to wrap in tags
 // Str - string containing query to wrap in tags
-export default function tagWrapper(tags, query, str) {
+function tagWrapper(tags, query, str) {
   const [openingTag, closingTag] = tags
 
   function wrapQuery(query, str) {
@@ -68,3 +68,5 @@ export default function tagWrapper(tags, query, str) {
 
   return mapQueryPosition(query, str, '')
 }
+
+module.exports = tagWrapper
