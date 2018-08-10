@@ -1,7 +1,7 @@
 const radix = 16
 
 function fullEncodeUri(str) {
-  return encodeURIComponent(str).replace(/[!'()*]/g, (char) => {
+  return encodeURIComponent(str).replace(/[.!'()*]/g, (char) => {
     return '%' + char.charCodeAt(0).toString(radix)
   })
 }

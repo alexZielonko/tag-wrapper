@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`tagWrapper Handles string containing urls 1`] = `"Is https://duckduckgo<em>.com</em>/ a privacy centric search engine?"`;
+
 exports[`tagWrapper Hanldes multi word query matching 1`] = `"The <em>quick brown fox</em> jumps over the lazy dog"`;
 
 exports[`tagWrapper Returns original str argument if a falsy str arg is passed 1`] = `undefined`;

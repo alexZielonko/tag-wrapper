@@ -346,4 +346,13 @@ describe('tagWrapper', () => {
     expect(actual).toBe(expected)
     expect(actual).toMatchSnapshot()
   })
+
+  it('Handles string containing urls', () => {
+    const str = 'Is https://duckduckgo.com/ a privacy centric search engine?'
+    const actual = tagWrapper(tags, '.com', str)
+    const expected = 'Is https://duckduckgo<em>.com</em>/ a privacy centric search engine?'
+
+    expect(actual).toBe(expected)
+    expect(actual).toMatchSnapshot()
+  })
 })
